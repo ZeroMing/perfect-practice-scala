@@ -10,9 +10,9 @@ public class HelloJava {
 
     public static void main(String[] args) {
 
-        HelloScala helloScala = new HelloScala();
+        /*HelloScala helloScala = new HelloScala();
 
-        helloScala.sayHello("Eden.Lee");
+        helloScala.sayHello("Eden.Lee");*/
 
     }
 }
