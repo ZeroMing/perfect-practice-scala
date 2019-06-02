@@ -13,3 +13,10 @@ class HelloScala {
   }
 
 }
+// 伴生对象
+object HelloScala{
+  def main(args: Array[String]): Unit = {
+    val helloScala = new HelloScala
+    helloScala.sayHello("Scala")
+  }
+}
