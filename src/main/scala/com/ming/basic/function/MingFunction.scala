@@ -9,13 +9,14 @@ class MingFunction {
 
 
   // 写法1: 需要推断类型
-  val function1 = (x:Int) => x * 10;
+  val function1 = (x:Int) => {
+    x * 10
+  };
 
   // 写法2：可以清晰看出输入参数和返回参数的类型
   val function2 : Int=>Int = {
     x => x * 10;
   }
-
 
   /**
     *
@@ -36,6 +37,17 @@ object  MingFunction{
     println(res)
     val res2 = mingFunction.handle(mingFunction.function2,6);
     println(res2)
+
+    println("--------------------------")
+    val list  = List(1,2,3,4,4,5,10)
+
+    println("----------过滤后------------")
+    list.filter(x => {
+       x%2==0
+    }).toList.foreach(x=>println(x))
+
+
+
   }
 
 
